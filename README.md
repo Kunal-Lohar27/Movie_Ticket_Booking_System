@@ -63,12 +63,13 @@ AWS Service Purpose Amazon DynamoDB Store booking information Amazon SES Send bo
 
 🔄 Project Flow
 ----------------------------------------
-🛠️ Step 1: AWS IAM Setup – User Roles & SDK Permissions
+**🛠️ Step 1: AWS IAM Setup – User Roles & SDK Permissions**
 
 🎯 Objective : 
 To securely connect our ASP.NET Web Forms application with AWS services (DynamoDB, S3, SES), we need to create an IAM User with programmatic access and assign the necessary permissions using AWS IAM. These credentials will be directly used in the C# code.
 
 🪜 Steps to Set Up IAM for This Project
+
 🔹 Step 1.1: Open IAM Console
 * Go to : https://console.aws.amazon.com/iam/
 * Click on Users, then Add users
@@ -85,12 +86,13 @@ To securely connect our ASP.NET Web Forms application with AWS services (DynamoD
 * AmazonSESFullAccess
 
 🔹 Step 1.4: Retrieve Credentials
+
 After creating the user, download the Access key CSV file or copy: 1. Access Key ID  2. Secret Access Key
 You’ll use these in your ASP.NET code to authenticate with AWS SDK.
 use them directly in the code via the AWSSDK for .NET
 var credentials = new BasicAWSCredentials("YOUR_ ACCESS_KEY", "YOUR_SECRET_KEY");
 
-🪣 Step 2: Amazon S3 Bucket Setup – Storing Movie Posters
-
+**🪣 Step 2: Amazon S3 Bucket Setup – Storing Movie Posters**
+----
 🎯 Objective :
 To store and retrieve movie posters dynamically on both Admin and User pages, we use Amazon S3, a highly scalable object storage service. In this step, we will create an S3 bucket and configure it for secure access via AWS SDK in our ASP.NET Web Forms application.
