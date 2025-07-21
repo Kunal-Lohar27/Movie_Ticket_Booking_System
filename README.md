@@ -12,3 +12,21 @@ The aim of this project is to showcase cloud-based architecture using AWS servic
 * Using real-time storage and messaging solutions
 * Designing scalable solutions without traditional databases
   
+🧰 Technologies Used
+----------------------------------------
+🔷 Frontend:
+* ASP.NET Web Forms (C#) – for web page logic and backend integration
+* HTML5 – page structure and markup
+* CSS3 – styling components
+* Bootstrap 5 – responsive UI design
+* JavaScript – for client-side interactions
+🟧 Backend:
+* ASP.NET Web Forms (C#) – server-side logic and form submission
+* AWS SDK for .NET – to interact with AWS services securely
+☁️ AWS Services:
+* Amazon DynamoDB – for storing movies and bookings
+* Amazon S3 – for storing and retrieving movie posters
+* Amazon SES – for sending email confirmations to users
+🛠️ Tools:
+* Visual Studio 2022 – primary IDE
+* AWS Management Console – for setting up services
