@@ -20,6 +20,7 @@ The aim of this project is to showcase cloud-based architecture using AWS servic
 * CSS3 – styling components
 * Bootstrap 5 – responsive UI design
 * JavaScript – for client-side interactions
+  
 🟧 Backend:
 * ASP.NET Web Forms (C#) – server-side logic and form submission
 * AWS SDK for .NET – to interact with AWS services securely
@@ -27,6 +28,7 @@ The aim of this project is to showcase cloud-based architecture using AWS servic
 * Amazon DynamoDB – for storing movies and bookings
 * Amazon S3 – for storing and retrieving movie posters
 * Amazon SES – for sending email confirmations to users
+  
 🛠️ Tools:
 * Visual Studio 2022 – primary IDE
 * AWS Management Console – for setting up services
