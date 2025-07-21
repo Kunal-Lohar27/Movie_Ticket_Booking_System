@@ -32,3 +32,31 @@ The aim of this project is to showcase cloud-based architecture using AWS servic
 🛠️ Tools:
 * Visual Studio 2022 – primary IDE
 * AWS Management Console – for setting up services
+
+👥 System Roles and Responsibilities
+----------------------------------------
+This application is designed with two key roles — each interacting with different parts of the system and AWS services.
+🧑‍💼 1. Admin Role
+The Admin is responsible for:
+* Logging into the admin dashboard
+* Adding, editing, and deleting movies
+* Uploading movie posters
+* Setting available show timings
+  
+✅ AWS Services Admin Uses:
+AWS Service Purpose Amazon S3 Upload movie posters Amazon DynamoDB Store and manage movie metadata (title, description, showtimes, image path)
+
+🎟️ 2. User Role
+The User can:
+* Register and login
+* Browse available movies
+* Book tickets
+* Select seats, date, time
+* Receive ticket confirmation email with movie and seat details
+
+✅ AWS Services User Uses:
+AWS Service Purpose Amazon DynamoDB Store booking information Amazon SES Send booking confirmation email with ticket details Amazon S3 Load/display movie posters on homepage
+
+🔄 Project Flow 2
+----------------------------------------
+
