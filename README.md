@@ -36,7 +36,9 @@ The aim of this project is to showcase cloud-based architecture using AWS servic
 👥 System Roles and Responsibilities
 ----------------------------------------
 This application is designed with two key roles — each interacting with different parts of the system and AWS services.
-🧑‍💼 1. Admin Role
+
+**🧑‍💼 1. **Admin Role****
+
 The Admin is responsible for:
 * Logging into the admin dashboard
 * Adding, editing, and deleting movies
@@ -46,7 +48,8 @@ The Admin is responsible for:
 ✅ AWS Services Admin Uses:
 AWS Service Purpose Amazon S3 Upload movie posters Amazon DynamoDB Store and manage movie metadata (title, description, showtimes, image path)
 
-🎟️ 2. User Role
+**🎟️ 2. User Role**
+
 The User can:
 * Register and login
 * Browse available movies
