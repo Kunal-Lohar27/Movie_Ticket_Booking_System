@@ -93,6 +93,20 @@ use them directly in the code via the AWSSDK for .NET
 var credentials = new BasicAWSCredentials("YOUR_ ACCESS_KEY", "YOUR_SECRET_KEY");
 
 **🪣 Step 2: Amazon S3 Bucket Setup – Storing Movie Posters**
-----
+
 🎯 Objective :
 To store and retrieve movie posters dynamically on both Admin and User pages, we use Amazon S3, a highly scalable object storage service. In this step, we will create an S3 bucket and configure it for secure access via AWS SDK in our ASP.NET Web Forms application.
+
+🪜 Steps to Set Up Amazon S3 for This Project
+
+🔹 Step 2.1: Open S3 Console
+* Go to: https://s3.console.aws.amazon.com/s3
+
+🔹 Step 2.2: Configure Bucket Settings
+* Bucket name: movie-ticket-posters (Ensure the name is unique globally)
+* Region: Asia Pacific (Mumbai) (ap-south-1)
+* Uncheck Block all public access (only if you want public images). For this project, we keep images private and access them using pre-signed URLs.
+* Leave all other settings as default.
+* Click “Create bucket”
+
+  
