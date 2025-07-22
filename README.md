@@ -159,6 +159,7 @@ We use Amazon SES to send Booking confirmation emails to users after successful 
 Ensure your IAM user has the following policy:
 
 {
+
 "Effect": "Allow",
 
 "Action": [
@@ -172,3 +173,34 @@ Ensure your IAM user has the following policy:
 
 }
 
+This allows your ASP.NET app to send email via SES SDK.
+
+**🧩 Step 5: Page-by-Page AWS Integration Flow**
+This step explains exactly where and how AWS services (S3, DynamoDB, SES) are used in different pages — both for Admin and User flows.
+
+**🔹 Step 5.1: Login Page – Browse Movies (User Role)**
+
+🧩 Purpose:
+
+* Allow users and admins to login or register.
+* No direct AWS SDK usage here.
+
+🔧 Backend Logic:
+
+* Hardcoded or simulated user-role-based login in C#.
+
+  **🔹 Step 5.2: Home.aspx Page – Browse Movies (User Role)**
+
+  Allow users to dynamically browse all currently available movies, including admin-uploaded movie posters and metadata from the Amazon S3 and DynamoDB services.
+
+  ✅ AWS Service:
+
+  * DynamoDB : The SDK sends a ScanRequest to fetch all movie entries.
+  * S3 : Each movie has an image URL pointing to S3
+
+  🧩 Purpose:
+
+  * Dynamically fetch and display the list of movies uploaded by the admin.
+  * Show movie posters stored in Amazon S3
+ 
+    **🔹 Step 5.2: Home.aspx Page – Browse Movies (User Role)**
