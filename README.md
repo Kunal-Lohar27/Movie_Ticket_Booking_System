@@ -148,6 +148,7 @@ Click Create Table
 ✉️ Step 4: Amazon SES (Simple Email Service) Setup – Email Confirmation Integration.
 
 🎯 Objective:
+
 We use Amazon SES to send Booking confirmation emails to users after successful ticket booking.
 
 🔹 Step 4.1: Open Amazon SES Console
@@ -156,8 +157,8 @@ We use Amazon SES to send Booking confirmation emails to users after successful 
 
 🔹 Step 4.3: IAM Permissions for SES
 Ensure your IAM user has the following policy:
-{
 
+{
 "Effect": "Allow",
 
 "Action": [
