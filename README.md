@@ -176,6 +176,7 @@ Ensure your IAM user has the following policy:
 This allows your ASP.NET app to send email via SES SDK.
 
 **🧩 Step 5: Page-by-Page AWS Integration Flow**
+
 This step explains exactly where and how AWS services (S3, DynamoDB, SES) are used in different pages — both for Admin and User flows.
 
 **🔹 Step 5.1: Login Page – Browse Movies (User Role)**
@@ -189,7 +190,7 @@ This step explains exactly where and how AWS services (S3, DynamoDB, SES) are us
 
 * Hardcoded or simulated user-role-based login in C#.
 
-  **🔹 Step 5.2: Home.aspx Page – Browse Movies (User Role)**
+  **🔹 Step 5.2: Home Page – Browse Movies (User Role)**
 
   Allow users to dynamically browse all currently available movies, including admin-uploaded movie posters and metadata from the Amazon S3 and DynamoDB services.
 
@@ -203,4 +204,35 @@ This step explains exactly where and how AWS services (S3, DynamoDB, SES) are us
   * Dynamically fetch and display the list of movies uploaded by the admin.
   * Show movie posters stored in Amazon S3
  
-    **🔹 Step 5.2: Home.aspx Page – Browse Movies (User Role)**
+ **🔹 Step 5.3: Booking Page – Browse Movies (User Role)**
+
+ To allow users to book movie tickets by Selecting seats,Choosing a date and time,Saving booking to DynamoDB,Sending confirmation email via SES,Generating and uploading ticket PDF to     S3,Redirecting to the Ticket.aspx page with booking details
+
+ ✅ AWS Service:
+
+ * DynamoDB - Save Booking to DynamoDB
+ * AWS SES - Send Email via SES (if checked)
+ * S3 - Upload Ticket to S3
+
+**🔹 Step 5.4: Ticket Page**
+
+This page handles Generating a PDF ticket file. Uploading the PDF to Amazon S3. Providing download option to the user
+
+ ✅ AWS Service:
+
+ * AWS S3 - Upload and host the generated ticket PDF files.
+
+**🔹 Step 5.5: Home Page (Admin Role)**
+
+This page is the Admin Dashboard, which displays all movies currently listed in the system. These movie records are dynamically loaded from DynamoDB
+
+**🔹 Step 5.6: ManageMovies Page**
+
+This is the Admin movie management page, where the admin can Add a new movie (title, description, showtimes, and poster) , Edit an existing movie, Delete a movie
+
+**🔹 Step 5.7: Logs.aspx — Admin Log Monitoring Page**
+
+The Logs.aspx page provides an admin-friendly interface View recent system activity logs , Monitor operations like booking, PDF ticket generation, and email delivery , Simulate or extend real-time logging using Amazon CloudWatch Logs.
+
+
+
