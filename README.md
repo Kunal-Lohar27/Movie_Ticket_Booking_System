@@ -122,7 +122,6 @@ This enables real-time dynamic updates without a traditional relational DB.
 
 🔸 Step 3.1: Create Movies Table
 * Go to: DynamoDB Console
-* Click “Create Table”
 * Enter the following:
 
 | **Setting**   |    **Value**     |
@@ -137,8 +136,9 @@ This enables real-time dynamic updates without a traditional relational DB.
   
 🔸 Step 3.2: Create Bookings Table
 
-  **Setting**	              **Value**
-Table Name	          Bookings
-Partition Key	        BookingId (String)
-Sort Key	            (leave blank)
-Capacity Mode	        On-demand
+| **Setting**   |    **Value**       |
+| ------------- | ---------------    |
+| Table Name    | Bookings           |
+| Partition Key | BookingId (String) |
+| Sort Key      | (leave blank)      |
+| Capacity Mode | On-demand          |
