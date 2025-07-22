@@ -142,3 +142,32 @@ This enables real-time dynamic updates without a traditional relational DB.
 | Partition Key | BookingId (String) |
 | Sort Key      | (leave blank)      |
 | Capacity Mode | On-demand          |
+
+Click Create Table
+
+✉️ Step 4: Amazon SES (Simple Email Service) Setup – Email Confirmation Integration.
+
+🎯 Objective:
+We use Amazon SES to send Booking confirmation emails to users after successful ticket booking.
+
+🔹 Step 4.1: Open Amazon SES Console
+* URL: https://console.aws.amazon.com/ses
+* Choose Region: Use the same region where you created other services
+
+🔹 Step 4.3: IAM Permissions for SES
+Ensure your IAM user has the following policy:
+{
+
+"Effect": "Allow",
+
+"Action": [
+
+"ses:SendEmail",
+
+"ses:SendRawEmail"
+],
+
+"Resource": "*"
+
+}
+
