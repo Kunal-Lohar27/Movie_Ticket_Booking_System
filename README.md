@@ -124,12 +124,14 @@ This enables real-time dynamic updates without a traditional relational DB.
 * Go to: DynamoDB Console
 * Click “Create Table”
 * Enter the following:
+
+| **Setting**   |    **Value**     |
+| ------------- | ---------------  |
+| Table Name    | Movies           |
+| Partition Key | MovieId (String) |
+| Sort Key      | (leave blank)    |
+| Capacity Mode | On-demand        |
   
-    **Setting**	          **Value**
-  Table Name	        Movies
-  Partition Key	   MovieId (String)
-    Sort Key	      (leave blank)
-   Capacity Mode	    On-demand
 
 * Click Create Table.
   
