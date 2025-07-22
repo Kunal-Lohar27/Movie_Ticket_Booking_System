@@ -109,4 +109,23 @@ To store and retrieve movie posters dynamically on both Admin and User pages, we
 * Leave all other settings as default.
 * Click “Create bucket”
 
-  
+**🧮 Step 3: Amazon DynamoDB Setup – Storing Movies & Bookings**
+
+🎯 Objective:
+
+We use Amazon DynamoDB, a fast and flexible NoSQL database service, to dynamically store and retrieve:
+🎬 Movie metadata (title, description, poster, show timings)
+🎟️ User bookings (name, email, selected movie, date/time, seats)
+This enables real-time dynamic updates without a traditional relational DB.
+
+🪜 Steps to Set Up Amazon DynamoDB Tables
+
+🔸 Step 3.1: Create Movies Table
+* Go to: DynamoDB Console
+* Click “Create Table”
+* Enter the following:
+    Setting	          Value
+  Table Name	        Movies
+  Partition Key	   MovieId (String)
+    Sort Key	      (leave blank)
+   Capacity Mode	    On-demand
