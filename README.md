@@ -194,6 +194,8 @@ This step explains exactly where and how AWS services (S3, DynamoDB, SES) are us
 
   **🔹 Step 5.2: Home Page – Browse Movies (User Role)**
 
+![WhatsApp Image 2025-07-23 at 10 00 05 PM](https://github.com/user-attachments/assets/c08007b1-8d92-4eee-8e22-250e3d7fc674)
+
   Allow users to dynamically browse all currently available movies, including admin-uploaded movie posters and metadata from the Amazon S3 and DynamoDB services.
 
   ✅ AWS Service:
@@ -208,6 +210,8 @@ This step explains exactly where and how AWS services (S3, DynamoDB, SES) are us
  
  **🔹 Step 5.3: Booking Page – Browse Movies (User Role)**
 
+ ![WhatsApp Image 2025-07-23 at 10 00 05 PM (3)](https://github.com/user-attachments/assets/ce57f52c-8dd9-4ea5-9908-497036a5cff5)
+
  To allow users to book movie tickets by Selecting seats,Choosing a date and time,Saving booking to DynamoDB,Sending confirmation email via SES,Generating and uploading ticket PDF to     S3,Redirecting to the Ticket.aspx page with booking details
 
  ✅ AWS Service:
@@ -218,6 +222,8 @@ This step explains exactly where and how AWS services (S3, DynamoDB, SES) are us
 
 **🔹 Step 5.4: Ticket Page**
 
+![WhatsApp Image 2025-07-23 at 10 00 05 PM (4)](https://github.com/user-attachments/assets/0ceffdf9-fd2f-4131-a568-907604414cd3)
+
 This page handles Generating a PDF ticket file. Uploading the PDF to Amazon S3. Providing download option to the user
 
  ✅ AWS Service:
@@ -226,9 +232,13 @@ This page handles Generating a PDF ticket file. Uploading the PDF to Amazon S3. 
 
 **🔹 Step 5.5: Home Page (Admin Role)**
 
+![WhatsApp Image 2025-07-23 at 10 00 04 PM (3)](https://github.com/user-attachments/assets/35aa12bb-a3a4-482c-a84e-ba7fb51433df)
+
 This page is the Admin Dashboard, which displays all movies currently listed in the system. These movie records are dynamically loaded from DynamoDB
 
 **🔹 Step 5.6: ManageMovies Page**
+
+![WhatsApp Image 2025-07-23 at 10 00 04 PM (2)](https://github.com/user-attachments/assets/d92ebb6e-e772-4c6e-b004-535c9c4cb418)
 
 This is the Admin movie management page, where the admin can Add a new movie (title, description, showtimes, and poster) , Edit an existing movie, Delete a movie
 
