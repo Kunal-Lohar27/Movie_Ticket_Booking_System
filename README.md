@@ -181,6 +181,8 @@ This step explains exactly where and how AWS services (S3, DynamoDB, SES) are us
 
 **🔹 Step 5.1: Login Page – Browse Movies (User Role)**
 
+![WhatsApp Image 2025-07-23 at 10 00 05 PM (1)](https://github.com/user-attachments/assets/ba66c25b-5d3a-46f7-911d-02aa886577a2)
+
 🧩 Purpose:
 
 * Allow users and admins to login or register.
